@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".ui.settings.SettingsFragment">
+
+        <TextView
+            android:id="@+id/tv_account_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:background="#e6e6e6"
+            android:text="Account"
+            android:drawableEnd="@drawable/ic_right_arrow" />
+
+        <TextView
+            android:id="@+id/tv_dark_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:padding="16dp"
+            android:background="#e6e6e6"
+            android:text="Dark Mode"
+            android:drawableEnd="@drawable/ic_right_arrow" />
+
+    </LinearLayout>
+</layout>
