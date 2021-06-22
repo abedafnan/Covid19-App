@@ -1,22 +1,22 @@
 package com.graduation.sengproject.ui.information
 
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.fragment.findNavController
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
 import com.graduation.sengproject.R
-import kotlinx.android.synthetic.main.login_fragment.*
+import com.graduation.sengproject.ui.protection.ProtectionFragment
+import com.graduation.sengproject.ui.protection.ProtectionViewModel
 
 class InfoFragment : Fragment() {
 
     companion object {
-        fun newInstance() = InfoFragment()
+        fun newInstance() = ProtectionFragment()
     }
 
-    private lateinit var viewModel: InfoViewModel
+    private lateinit var viewModel: ProtectionViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -27,7 +27,7 @@ class InfoFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(InfoViewModel::class.java)
+        viewModel = ViewModelProvider(this).get(ProtectionViewModel::class.java)
         // TODO: Use the ViewModel
 
     }

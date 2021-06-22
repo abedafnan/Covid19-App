@@ -1,0 +1,51 @@
+package com.graduation.sengproject.ui.protection
+
+import android.os.Bundle
+import android.util.Log
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
+import com.graduation.sengproject.R
+import java.lang.Exception
+
+class ProtectionFragment : Fragment() {
+
+    companion object {
+        fun newInstance() = ProtectionFragment()
+    }
+
+    private lateinit var viewModel: ProtectionViewModel
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        return inflater.inflate(R.layout.fragment_protection, container, false)
+    }
+
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+        viewModel = ViewModelProvider(this).get(ProtectionViewModel::class.java)
+        // TODO: Use the ViewModel
+//
+//        val youtube = getYouTubeService();
+//        try {
+//            val parameters = HashMap<String, String>();
+//            parameters["part"] = "snippet,contentDetails,statistics";
+//            parameters["id"] = "Ks-_Mh1QhMc";
+//
+//            val videosListByIdRequest = youtube.videos().list(parameters["part"].toString());
+//            if (parameters.containsKey("id") && parameters["id"] != "") {
+//                videosListByIdRequest.setId(parameters["id"].toString());
+//            }
+//
+//            val response = videosListByIdRequest.execute();
+//            Log.d("testing", response)
+//
+//        } catch (exception: Exception) {
+//            exception.printStackTrace()
+//        }
+    }
+}

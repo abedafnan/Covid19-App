@@ -28,7 +28,7 @@
             android:layout_marginBottom="16dp"
             android:background="#e0e0e0"
             android:padding="8dp"
-            android:text="News"
+            android:text="Statistics"
             android:textAlignment="center"
             android:textAllCaps="false"
             android:textSize="20sp" />

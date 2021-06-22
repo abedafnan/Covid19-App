@@ -39,7 +39,7 @@
 
     <fragment
         android:id="@+id/infoFragment"
-        android:name="com.graduation.sengproject.ui.information.InfoFragment"
+        android:name="com.graduation.sengproject.ui.protection.ProtectionFragment"
         android:label="Information" />
 
     <fragment
