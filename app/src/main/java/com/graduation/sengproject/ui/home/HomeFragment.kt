@@ -35,6 +35,10 @@ class HomeFragment : Fragment() {
             findNavController().navigate(R.id.action_navigation_home_to_navigation_notifications)
         }
 
+        binding.btnProtection.setOnClickListener {
+            findNavController().navigate(R.id.action_navigation_home_to_protectionFragment)
+        }
+
         return binding.root
     }
 }

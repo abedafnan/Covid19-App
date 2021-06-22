@@ -29,23 +29,5 @@ class ProtectionFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this).get(ProtectionViewModel::class.java)
         // TODO: Use the ViewModel
-//
-//        val youtube = getYouTubeService();
-//        try {
-//            val parameters = HashMap<String, String>();
-//            parameters["part"] = "snippet,contentDetails,statistics";
-//            parameters["id"] = "Ks-_Mh1QhMc";
-//
-//            val videosListByIdRequest = youtube.videos().list(parameters["part"].toString());
-//            if (parameters.containsKey("id") && parameters["id"] != "") {
-//                videosListByIdRequest.setId(parameters["id"].toString());
-//            }
-//
-//            val response = videosListByIdRequest.execute();
-//            Log.d("testing", response)
-//
-//        } catch (exception: Exception) {
-//            exception.printStackTrace()
-//        }
     }
 }

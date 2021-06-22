@@ -1,7 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
-</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Protect yourself and others by making these 6 simple precautions your new habits:" />
+
+        <ImageView
+            android:layout_width="400dp"
+            android:layout_height="500dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginVertical="16dp"
+            android:src="@drawable/covid" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Social distancing should be practiced in combination with other everyday preventive actions to reduce the spread of COVID-19, including wearing masks, avoiding touching your face with unwashed hands, and frequently washing your hands with soap and water for at least 20 seconds." />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/covid2" />
+    </LinearLayout>
+</ScrollView>
