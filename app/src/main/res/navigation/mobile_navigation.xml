@@ -22,6 +22,9 @@
         <action
             android:id="@+id/action_navigation_home_to_protectionFragment"
             app:destination="@id/protectionFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_newsFragment"
+            app:destination="@id/newsFragment" />
     </fragment>
 
     <fragment
@@ -54,4 +57,9 @@
         android:id="@+id/protectionFragment"
         android:name="com.graduation.sengproject.ui.protection.ProtectionFragment"
         android:label="Protection Measures" />
+
+    <fragment
+        android:id="@+id/newsFragment"
+        android:name="com.graduation.sengproject.ui.news.NewsFragment"
+        android:label="News" />
 </navigation>

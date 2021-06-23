@@ -1,8 +1,8 @@
 package com.graduation.sengproject.ui.dashboard
 
 import com.graduation.sengproject.databinding.ItemCasesBinding
-import com.graduation.sengproject.models.Country
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.graduation.sengproject.models.CountryArea
@@ -18,6 +18,13 @@ class DashboardAdapter2(var data: List<CountryArea>)
             itemPreviousInterviewBinding.tvNewDeaths.text = interview.Deaths.toString()
             itemPreviousInterviewBinding.tvNewRecovered.text = interview.Recovered.toString()
             itemPreviousInterviewBinding.tvGlobalDate.text = interview.Date
+
+            var city = interview.City
+            if (city.isEmpty()) {
+                city = "UnDefined"
+            }
+            itemPreviousInterviewBinding.layoutCity.visibility = View.VISIBLE
+            itemPreviousInterviewBinding.tvCity.text = city
         }
     }
 

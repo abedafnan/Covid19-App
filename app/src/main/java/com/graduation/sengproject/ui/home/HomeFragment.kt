@@ -27,7 +27,7 @@ class HomeFragment : Fragment() {
             findNavController().navigate(R.id.action_navigation_home_to_infoFragment)
         }
 
-        binding.btnNews.setOnClickListener {
+        binding.btnStatistics.setOnClickListener {
             findNavController().navigate(R.id.action_navigation_home_to_navigation_dashboard)
         }
 
@@ -37,6 +37,10 @@ class HomeFragment : Fragment() {
 
         binding.btnProtection.setOnClickListener {
             findNavController().navigate(R.id.action_navigation_home_to_protectionFragment)
+        }
+
+        binding.btnNews.setOnClickListener {
+            findNavController().navigate(R.id.action_navigation_home_to_newsFragment)
         }
 
         return binding.root
